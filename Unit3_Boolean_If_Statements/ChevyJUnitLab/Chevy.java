@@ -70,7 +70,33 @@ public class Chevy {
     }
 
     public String toString(){
-        //tbd
+        String output;
+        output = "**************************************************\n";
+        output += year + " " + MAKE + " " + model + " (" + color + ")\n";
+        output += "\tBASE PRICE:\t\t\t\t\t$" + basePrice;
+        output += "\n\tMILES:\t\t\t\t\t\t" + mileage;
+        output += "\n\tFUEL EFFICIENCY:\t\t\t" + fuelEf + " mpg";
+        output += "\n\tPACKAGES:\n";
+
+        if(luxPack || sportsPack || fourWDPack){
+            if(luxPack){
+                output += "\t\t - Luxury Package\n";
+            }
+            if(sportsPack){
+                output += "\t\t - Sports Package\n";
+            }
+            if(fourWDPack){
+                output += "\t\t - 4WD Package\n";
+            }
+        }
+        else{
+            output += "- None";
+        }
+
+        output += "\n\n\tPRICE WITH UPGRADES:\t\t$" + (upgradePrice + basePrice);
+        output += "\n\tFINAL PRICE WITH TAX:\t\t$" + totalPrice;
+        output += "\n**************************************************";
+        return output;
     }
 
     public void calcPrice(){
@@ -84,7 +110,7 @@ public class Chevy {
             upgradePrice += basePrice*SPORTPACK_INC;
             fuelEf -= fuelEf*FUEL_DEC;
         }
-        totalPrice = (upgradePrice + basePrice)*TAX_RATE;
+        totalPrice = (upgradePrice + basePrice)*(TAX_RATE + 1);
     }
 
     ///getters and setters
@@ -96,19 +122,19 @@ public class Chevy {
         this.year = year;
     }
 
-    public int getMileage() {
+    public int getMiles() {
         return mileage;
     }
 
-    public void setMileage(int mileage) {
+    public void setMiles(int mileage) {
         this.mileage = mileage;
     }
 
-    public double getFuelEf() {
+    public double getMpg() {
         return fuelEf;
     }
 
-    public void setFuelEf(double fuelEf) {
+    public void setMpg(double fuelEf) {
         this.fuelEf = fuelEf;
         calcPrice();
     }
@@ -138,38 +164,51 @@ public class Chevy {
         this.color = color;
     }
 
-    public boolean isLuxPack() {
+    public boolean getLuxuryPkg() {
         return luxPack;
     }
 
-    public void setLuxPack(boolean luxPack) {
+    public void setLuxuryPkg(boolean luxPack) {
         this.luxPack = luxPack;
         calcPrice();
     }
 
-    public boolean isFourWDPack() {
+    public boolean get4WDPkg() {
         return fourWDPack;
     }
 
-    public void setFourWDPack(boolean fourWDPack) {
+    public void set4WDPkg(boolean fourWDPack) {
         this.fourWDPack = fourWDPack;
         calcPrice();
     }
 
-    public boolean isSportsPack() {
+    public boolean getSportsPkg() {
         return sportsPack;
     }
 
-    public void setSportsPack(boolean sportsPack) {
+    public void setSportsPkg(boolean sportsPack) {
         this.sportsPack = sportsPack;
         calcPrice();
     }
 
-    public double getUpgradePrice() {
-        return upgradePrice;
+    public double getPriceWithUpgrades() {
+        return upgradePrice + basePrice;
     }
 
-    public double getTotalPrice() {
+    public String getMake() {
+        return MAKE;
+    }
+
+    public void setPriceWithUpgrades(double upgradePrice) {
+        this.upgradePrice = upgradePrice;
+        this.totalPrice = basePrice + upgradePrice;
+    }
+
+    public void setGrandTotal(double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public double getGrandTotal() {
         return totalPrice;
     }
 }

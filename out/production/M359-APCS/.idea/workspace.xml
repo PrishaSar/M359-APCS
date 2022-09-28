@@ -27,27 +27,23 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;H:/M359_Saraiya_22-23/M359-APCS&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Section_3_7Examples_JUnitTest.equalsShoeTestOne">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\M359_Saraiya_22-23\M359-APCS\Unit3_Boolean_If_Statements\ShoeCourseJUnitEx" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ChevyJUnitTestStudent">
     <configuration name="CompoundBooleanEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit3_Boolean_If_Statements.CompoundBooleanEx" />
-      <module name="M359-APCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit3_Boolean_If_Statements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReviewTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit3_Boolean_If_Statements.ReviewTester" />
       <module name="M359-APCS" />
       <extension name="coverage">
         <pattern>
@@ -72,6 +68,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ChevyJUnitTestStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="M359-APCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit3_Boolean_If_Statements.ChevyJUnitLab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Unit3_Boolean_If_Statements.ChevyJUnitLab" />
+      <option name="MAIN_CLASS_NAME" value="Unit3_Boolean_If_Statements.ChevyJUnitLab.ChevyJUnitTestStudent" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Section_3_7Examples_JUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="M359-APCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit3_Boolean_If_Statements.ShoeCourseJUnitEx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Unit3_Boolean_If_Statements.ShoeCourseJUnitEx" />
+      <option name="MAIN_CLASS_NAME" value="Unit3_Boolean_If_Statements.ShoeCourseJUnitEx.Section_3_7Examples_JUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Section_3_7Examples_JUnitTest.equalsShoeTestOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="M359-APCS" />
       <extension name="coverage">
@@ -90,10 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChevyJUnitTestStudent" />
+        <item itemvalue="JUnit.Section_3_7Examples_JUnitTest" />
         <item itemvalue="JUnit.Section_3_7Examples_JUnitTest.equalsShoeTestOne" />
         <item itemvalue="Application.Student_Driver" />
         <item itemvalue="Application.CompoundBooleanEx" />
-        <item itemvalue="Application.ReviewTester" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +160,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit3_Boolean_If_Statements/ShoeCourseJUnitEx/Section_3_7Examples_JUnitTest.java</url>
+          <line>55</line>
+          <properties class="Unit3_Boolean_If_Statements.ShoeCourseJUnitEx.Section_3_7Examples_JUnitTest" method="equalsShoeTestOne">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
