@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Notes_3_1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        boolean isDone = true;
+        boolean isDone = false;
         int count = 0;
         int scores = 0;
 
@@ -15,13 +15,15 @@ public class Notes_3_1 {
                 count ++;
                 System.out.println("What is it? (type int)");
                 int num = input.nextInt();
+                input.nextLine(); //clears out enter
                 scores += num;
             }
             else{
                 isDone = true;
             }
         }
-        System.out.println("Your average is: " + (scores/count));
+        double avg = (double)scores/count;
+        System.out.println("Your average is: " + avg);
 
     }
 }
