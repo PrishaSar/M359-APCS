@@ -43,20 +43,7 @@
       <recent name="H:\M359_Saraiya_22-23\M359-APCS\Unit3_Boolean_If_Statements\ShoeCourseJUnitEx" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Notes_4_2">
-    <configuration name="Chevy_Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit3_Boolean_If_Statements.ChevyJUnitLab.Chevy_Driver" />
-      <module name="M359-APCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit3_Boolean_If_Statements.ChevyJUnitLab.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Notes_4_5">
     <configuration name="GuessNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unite4_loops.GuessNumber" />
       <module name="M359-APCS" />
@@ -96,28 +83,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChevyJUnitTestStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Notes_4_3_String" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unite4_loops.Notes_4_3_String" />
       <module name="M359-APCS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit3_Boolean_If_Statements.ChevyJUnitLab.*" />
+          <option name="PATTERN" value="Unite4_loops.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Unit3_Boolean_If_Statements.ChevyJUnitLab" />
-      <option name="MAIN_CLASS_NAME" value="Unit3_Boolean_If_Statements.ChevyJUnitLab.ChevyJUnitTestStudent" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Notes_4_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unite4_loops.Notes_4_5" />
+      <module name="M359-APCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unite4_loops.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Notes_4_5" />
+        <item itemvalue="Application.Notes_4_3_String" />
         <item itemvalue="Application.Notes_4_2" />
         <item itemvalue="Application.GuessNumber" />
         <item itemvalue="Application.Notes_3_1" />
-        <item itemvalue="Application.Chevy_Driver" />
-        <item itemvalue="JUnit.ChevyJUnitTestStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -166,6 +164,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unite4_loops/Notes_4_2.java</url>
+          <line>3</line>
+          <properties class="Unite4_loops.Notes_4_2" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

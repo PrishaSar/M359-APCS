@@ -9,11 +9,25 @@ public class Notes_4_2 {
 
         System.out.println("\n");
 
-        //print the multipels of 5 from 5 to 100
+        //print the multiples of 5 from 5 to 100
         for(int i = 0; i <= 100; i+=5){
             System.out.print(i + " ");
         }
 
-        //
+        //print all characters of S with a space
+        String str = "FremdHS";
+        String out = "\n\n";
+        for(int i = 0; i < str.length(); i++){
+            out += str.substring(i,i+1) + " ";
+        }
+        System.out.println(out + "\n");
+
+
+        String outs = "";
+        for(int i = str.length()-1; i >= 0; i--){
+            outs += str.substring(i,i+1);
+        }
+        System.out.println(outs + "\n");
+
     }
 }
