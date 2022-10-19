@@ -1,4 +1,8 @@
+package Unite4_loops.PigLatinLab;
+
 import static org.junit.Assert.assertEquals;
+
+import Unite4_loops.PigLatinLab.PigLatin;
 import org.junit.Before;
 import org.junit.After;
 import org.junit.Test;

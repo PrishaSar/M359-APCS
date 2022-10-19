@@ -43,46 +43,7 @@
       <recent name="H:\M359_Saraiya_22-23\M359-APCS\Unit3_Boolean_If_Statements\ShoeCourseJUnitEx" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PigLatinJUnitTest">
-    <configuration name="Notes_4_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unite4_loops.Notes_4_2" />
-      <module name="M359-APCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unite4_loops.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Notes_4_3_String" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unite4_loops.Notes_4_3_String" />
-      <module name="M359-APCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unite4_loops.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Notes_4_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unite4_loops.Notes_4_5" />
-      <module name="M359-APCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unite4_loops.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PigLatinJUnitTest (1)">
     <configuration name="PigLatinDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unite4_loops.PigLatinLab.PigLatinDriver" />
       <module name="M359-APCS" />
@@ -96,22 +57,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PigLatinJUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PigLatinJUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="M359-APCS" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PigLatinJUnitTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unite4_loops.PigLatinLab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Unite4_loops.PigLatinLab" />
+      <option name="MAIN_CLASS_NAME" value="Unite4_loops.PigLatinLab.PigLatinJUnitTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PigLatinJUnitTest.translatePhrase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="M359-APCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unite4_loops.PigLatinLab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Unite4_loops.PigLatinLab" />
+      <option name="MAIN_CLASS_NAME" value="Unite4_loops.PigLatinLab.PigLatinJUnitTest" />
+      <option name="METHOD_NAME" value="translatePhrase2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PigLatinJUnitTest.translatePhrase3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="M359-APCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unite4_loops.PigLatinLab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Unite4_loops.PigLatinLab" />
+      <option name="MAIN_CLASS_NAME" value="Unite4_loops.PigLatinLab.PigLatinJUnitTest" />
+      <option name="METHOD_NAME" value="translatePhrase3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PigLatinJUnitTest.translateStartWithYVowel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="M359-APCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unite4_loops.PigLatinLab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Unite4_loops.PigLatinLab" />
+      <option name="MAIN_CLASS_NAME" value="Unite4_loops.PigLatinLab.PigLatinJUnitTest" />
+      <option name="METHOD_NAME" value="translateStartWithYVowel" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PigLatinJUnitTest" />
+        <item itemvalue="JUnit.PigLatinJUnitTest (1)" />
         <item itemvalue="Application.PigLatinDriver" />
-        <item itemvalue="Application.Notes_4_5" />
-        <item itemvalue="Application.Notes_4_3_String" />
-        <item itemvalue="Application.Notes_4_2" />
+        <item itemvalue="JUnit.PigLatinJUnitTest.translatePhrase3" />
+        <item itemvalue="JUnit.PigLatinJUnitTest.translatePhrase2" />
+        <item itemvalue="JUnit.PigLatinJUnitTest.translateStartWithYVowel" />
       </list>
     </recent_temporary>
   </component>
