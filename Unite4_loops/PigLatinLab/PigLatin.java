@@ -35,7 +35,7 @@ public class PigLatin {
     }
 
     /**
-     * This fuction checks if the checks if the vowel rule applies to a word
+     * This function checks if the vowel rule applies to a word
      * @param letter This takes in a character to check
      * @return This returns a boolean
      */

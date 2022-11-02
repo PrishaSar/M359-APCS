@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="575e7d17-11c7-46b0-ab81-5b0976065645" name="Changes" comment="" />
+    <list id="fe60d9a3-00cc-46fd-a701-830030079cb8" name="Changes by chen1590" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,13 +44,39 @@
       <recent name="H:\M359_Saraiya_22-23\M359-APCS\Unit3_Boolean_If_Statements\ShoeCourseJUnitEx" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PigLatinJUnitTest (1)">
+  <component name="RunManager" selected="Application.MarvelMovieTester">
+    <configuration name="MarvelMovieTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit5WritingClasses.HeroVillian.MarvelMovieTester" />
+      <module name="M359-APCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit5WritingClasses.HeroVillian.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PigLatinDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unite4_loops.PigLatinLab.PigLatinDriver" />
       <module name="M359-APCS" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Unite4_loops.PigLatinLab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unit4TestRev" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unite4_loops.Unit4TestRev" />
+      <module name="M359-APCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unite4_loops.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,22 +99,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PigLatinJUnitTest.translatePhrase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="M359-APCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unite4_loops.PigLatinLab.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Unite4_loops.PigLatinLab" />
-      <option name="MAIN_CLASS_NAME" value="Unite4_loops.PigLatinLab.PigLatinJUnitTest" />
-      <option name="METHOD_NAME" value="translatePhrase2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PigLatinJUnitTest.translatePhrase3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="M359-APCS" />
       <extension name="coverage">
@@ -104,29 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PigLatinJUnitTest.translateStartWithYVowel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="M359-APCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unite4_loops.PigLatinLab.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Unite4_loops.PigLatinLab" />
-      <option name="MAIN_CLASS_NAME" value="Unite4_loops.PigLatinLab.PigLatinJUnitTest" />
-      <option name="METHOD_NAME" value="translateStartWithYVowel" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PigLatinJUnitTest (1)" />
+        <item itemvalue="Application.MarvelMovieTester" />
+        <item itemvalue="Application.Unit4TestRev" />
         <item itemvalue="Application.PigLatinDriver" />
+        <item itemvalue="JUnit.PigLatinJUnitTest (1)" />
         <item itemvalue="JUnit.PigLatinJUnitTest.translatePhrase3" />
-        <item itemvalue="JUnit.PigLatinJUnitTest.translatePhrase2" />
-        <item itemvalue="JUnit.PigLatinJUnitTest.translateStartWithYVowel" />
       </list>
     </recent_temporary>
   </component>
