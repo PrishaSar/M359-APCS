@@ -11,12 +11,20 @@ public class Acts {
     private People person3;
     private int numPeople;
 
-    // constructor
-    public Acts(String type, int runTime, int popularity, boolean hasBeenShown, People person1, People person2, People person3) {
+    /**
+     * Full constructor for an act
+     * @param type A string that describes the act type.
+     * @param runTime An int that describes how long the act runs for, in minutes.
+     * @param popularity An int that describes how popular the act is, on a scale of 1 to 10.
+     * @param person1 A People object for a person performing in the act. Might not perform.
+     * @param person2 A People object for a person performing in the act. Might not perform.
+     * @param person3 A People object for a person performing in the act. Might not perform.
+     */
+    public Acts(String type, int runTime, int popularity, People person1, People person2, People person3) {
         this.type = type;
         this.runTime = runTime;
         this.popularity = popularity;
-        this.hasBeenShown = hasBeenShown;
+        this.hasBeenShown = false;
         this.person1 = new People(person1.getSkill(), person1.getName(), person1.isBackstage());
         this.person2 = new People(person2.getSkill(), person2.getName(), person2.isBackstage());
         this.person3 = new People(person3.getSkill(), person3.getName(), person3.isBackstage());
