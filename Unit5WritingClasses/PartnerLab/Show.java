@@ -9,6 +9,8 @@ public class Show {
     private boolean isWeekend;
     private boolean isEvening;
     private int timeRemaining;
+//    private static double pricePerTicket = 15.99;
+//    private static final int MAX_TICKETS = 500;
 
     /**
      * Full constructor for a show
@@ -49,7 +51,7 @@ public class Show {
     /**
      * Runs an act in the show and updates the counter that keeps track of how many minutes are left until
      * the whole show ends. When the act runs, it changes the act boolean variable hasBeenShown to true.
-     * if the entire show is over, set all the act boolean variables to false again.
+     * If the entire show is over, set all the act boolean variables to false again.
      *
      * @param act - the Act that has just finished.
      */
@@ -63,39 +65,22 @@ public class Show {
         }
     }
 
-    public static Show compareShows(Show a, Show b){
-        int aRev = calcRevenue(a);
-        int bRev = calcRevenue(b);
-
-        if(aRev > bRev){
-            return a;
-        }
-        else if (bRev > aRev){
-            return b;
-        }
-        else{
-            if(Math.random() >= 0.5){
-                return a;
-            }
-            return b;
-        }
-
-    }
 
     /**
      *
-     * @param s
      * @return
      */
-    private static int calcRevenue(Show s){
+    public int calcRevenue(){
         int rev = 0;
-        rev += s.act1.getPopularity() + s.act2.getPopularity() + s.act3.getPopularity();
-        if (s.isEvening()){
-            rev += 10;
+        rev += this.act1.getPopularity() + this.act2.getPopularity() + this.act3.getPopularity();
+        if (this.isEvening()){
+            rev += 5;
         }
-        if(s.isWeekend()){
-            rev += 11;
+        if(this.isWeekend()){
+            rev += 6;
         }
+
+//        int numPeople = (int)(Math.random() * (MAX_TICKETS)) +
         return rev;
     }
 
@@ -147,6 +132,4 @@ public class Show {
     public int getTimeRemaining() {
         return timeRemaining;
     }
-
-
 }

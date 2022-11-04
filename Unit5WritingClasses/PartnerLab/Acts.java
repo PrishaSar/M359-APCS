@@ -4,12 +4,18 @@ public class Acts {
     // instance variables
     String type;
     private int runTime;
-    private int popularity;
+    private double popularity;
     private boolean hasBeenShown;
     private People person1;
     private People person2;
     private People person3;
     private int numPeople;
+
+    private static int totalRunTime = 0;
+
+    public static int getTotalRunTime(){
+        return totalRunTime;
+    }
 
     /**
      * Full constructor for an act
@@ -20,9 +26,10 @@ public class Acts {
      * @param person2 A People object for a person performing in the act. Might not perform.
      * @param person3 A People object for a person performing in the act. Might not perform.
      */
-    public Acts(String type, int runTime, int popularity, People person1, People person2, People person3) {
+    public Acts(String type, int runTime, double popularity, People person1, People person2, People person3) {
         this.type = type;
         this.runTime = runTime;
+        totalRunTime += runTime;
         this.popularity = popularity;
         this.hasBeenShown = false;
         this.person1 = new People(person1.getSkill(), person1.getName(), person1.isBackstage());
@@ -59,14 +66,16 @@ public class Acts {
     }
 
     public void setRunTime(int runTime) {
+        totalRunTime -= this.runTime;
         this.runTime = runTime;
+        totalRunTime += this.runTime;
     }
 
-    public int getPopularity() {
+    public double getPopularity() {
         return popularity;
     }
 
-    public void setPopularity(int popularity) {
+    public void setPopularity(double popularity) {
         this.popularity = popularity;
     }
 

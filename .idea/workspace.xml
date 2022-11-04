@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="575e7d17-11c7-46b0-ab81-5b0976065645" name="Changes" comment="" />
+    <list id="ad4867e4-3c2f-4439-919d-f1f24b087d89" name="Changes by chen1590" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +17,33 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Unit5WritingClasses/PartnerLab/Show.java">
+      <ranges>
+        <range start1="11" end1="11" start2="11" end2="13" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="51" end1="52" start2="53" end2="54" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
+        <range start1="65" end1="83" start2="67" end2="67" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="86" end1="87" start2="70" end2="70" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="89" end1="90" start2="72" end2="73" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="91" end1="94" start2="74" end2="77" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="95" end1="97" start2="78" end2="80" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="98" end1="98" start2="81" end2="83" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="149" end1="151" start2="134" end2="134" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Unit5WritingClasses/PartnerLab/Acts.java">
+      <ranges>
+        <range start1="6" end1="7" start2="6" end2="7" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
+        <range start1="13" end1="13" start2="13" end2="19" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
+        <range start1="22" end1="23" start2="28" end2="29" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
+        <range start1="25" end1="25" start2="31" end2="32" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="61" end1="61" start2="68" end2="69" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="62" end1="62" start2="70" end2="71" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="64" end1="65" start2="73" end2="74" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
+        <range start1="68" end1="69" start2="77" end2="78" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
