@@ -9,8 +9,6 @@ public class Show {
     private boolean isWeekend;
     private boolean isEvening;
     private int timeRemaining;
-//    private static double pricePerTicket = 15.99;
-//    private static final int MAX_TICKETS = 500;
 
     /**
      * Full constructor for a show
@@ -67,8 +65,11 @@ public class Show {
 
 
     /**
-     *
-     * @return
+     *This calculates the approximate revenue earned from a show (in hundreds), depending on the popularity
+     * of each eact in the show and the time of the week the show takes place. 
+     * The higher the popularity, the more revenue.
+     * If the show is on a weekened or in the evening, the revenue increases.
+     * @return - returns the approximate revenue earned from a show (in hundreds)
      */
     public int calcRevenue(){
         int rev = 0;
@@ -79,8 +80,6 @@ public class Show {
         if(this.isWeekend()){
             rev += 6;
         }
-
-//        int numPeople = (int)(Math.random() * (MAX_TICKETS)) +
         return rev;
     }
 
