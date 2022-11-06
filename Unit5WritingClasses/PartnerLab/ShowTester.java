@@ -1,3 +1,5 @@
+//Isabella Chen, Prisha Saraiya, Mr. Moon, period 7
+//Purpose of Class:
 package Unit5WritingClasses.PartnerLab;
 
 public class ShowTester {
@@ -22,9 +24,14 @@ public class ShowTester {
         Acts danceMash = new Acts("Dance", 45, 5, primaBallerina, hipHoper, jazzDancer);
 
         //creating show
-        Show catAnddog = new Show(catGymnastics, musical, danceMash, true, false);
-
+        Show mixAndMatch = new Show(catGymnastics, musical, danceMash, true, false);
+        
         // concert, magic
+        //act 1 - disapearing ppl: 2
+        //act 2 - ghost thing ppl: 1 & 2 backstage
+        //act 3 - card tricks ppl: 1 
+        //interact w/ static variable and method
+        //Java documentation
     }
 
     public static Show compareShows(Show a, Show b){
@@ -59,7 +66,8 @@ public class ShowTester {
 
     //one other static method (param = objects)
     //both change instance var??
-    
+    //fire person??/change --> parameters - act object, digit(or var name), replace person object
+  
 
 
 
