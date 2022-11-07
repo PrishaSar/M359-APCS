@@ -13,6 +13,10 @@ public class Acts {
 
     private static int totalRunTime = 0;
 
+    /**
+     * This function returns the total runtime of all the acts created.
+     * @return
+     */
     public static int getTotalRunTime(){
         return totalRunTime;
     }
@@ -32,9 +36,9 @@ public class Acts {
         totalRunTime += runTime;
         this.popularity = popularity;
         this.hasBeenShown = false;
-        this.person1 = new People(person1.getSkill(), person1.getName(), person1.isBackstage());
-        this.person2 = new People(person2.getSkill(), person2.getName(), person2.isBackstage());
-        this.person3 = new People(person3.getSkill(), person3.getName(), person3.isBackstage());
+        this.person1 = person1;
+        this.person2 = person2;
+        this.person3 = person3;
         numPeople = getNumPeople();
     }
 

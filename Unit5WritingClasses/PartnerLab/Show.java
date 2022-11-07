@@ -19,9 +19,9 @@ public class Show {
      * @param isEvening - a boolean that is true if the show takes place in the evening.
      */
     public Show(Acts act1, Acts act2, Acts act3, boolean isWeekend, boolean isEvening) {
-        this.act1 = act1;
-        this.act2 = act2;
-        this.act3 = act3;
+        this.act1 = new Acts(act1.getType(), act1.getRunTime(), act1.getPopularity(), act1.getPerson1(), act1.getPerson2(), act1.getPerson3());
+        this.act2 = new Acts(act2.getType(), act2.getRunTime(), act2.getPopularity(), act2.getPerson1(), act2.getPerson2(), act2.getPerson3());
+        this.act3 = new Acts(act3.getType(), act3.getRunTime(), act3.getPopularity(), act3.getPerson1(), act3.getPerson2(), act3.getPerson3());
         this.runTime = setRunTime();
         this.timeRemaining = this.runTime;
         this.isWeekend = isWeekend;
