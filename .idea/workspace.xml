@@ -19,15 +19,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Unit5WritingClasses/PartnerLab/ShowTester.java">
+    <file path="$PROJECT_DIR$/Unit5WritingClasses/PartnerLab/Show.java">
       <ranges>
-        <range start1="9" end1="10" start2="9" end2="12" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
-        <range start1="13" end1="14" start2="15" end2="16" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
-        <range start1="19" end1="20" start2="21" end2="22" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
-        <range start1="25" end1="26" start2="27" end2="28" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
-        <range start1="27" end1="32" start2="29" end2="51" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
-        <range start1="36" end1="36" start2="55" end2="62" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
-        <range start1="66" end1="73" start2="92" end2="110" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="0" end1="0" start2="0" end2="2" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
+        <range start1="68" end1="69" start2="70" end2="71" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
+        <range start1="70" end1="71" start2="72" end2="73" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Unit5WritingClasses/PartnerLab/Acts.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="2" changelist="ad4867e4-3c2f-4439-919d-f1f24b087d89" />
+        <range start1="16" end1="18" start2="18" end2="20" changelist="575e7d17-11c7-46b0-ab81-5b0976065645" />
       </ranges>
     </file>
   </component>

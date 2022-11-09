@@ -1,3 +1,5 @@
+//Isabella Chen, Prisha Saraiya, Mr. Moon, period 7
+//Purpose of Class: To create an Act and keep track of the people in it.
 package Unit5WritingClasses.PartnerLab;
 
 public class Acts {
@@ -14,8 +16,8 @@ public class Acts {
     private static int totalRunTime = 0;
 
     /**
-     * This function returns the total runtime of all the acts created.
-     * @return
+     * This function returns the total runtime in minutes of all the acts created.
+     * @return - static variable totalRunTime
      */
     public static int getTotalRunTime(){
         return totalRunTime;

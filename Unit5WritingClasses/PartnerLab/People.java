@@ -1,3 +1,5 @@
+//Isabella Chen, Prisha Saraiya, Mr. Moon, period 7
+//Purpose of Class: To create a person with a skill and name. The person can be backstage.
 package Unit5WritingClasses.PartnerLab;
 
 public class People {

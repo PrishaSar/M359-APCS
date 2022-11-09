@@ -1,5 +1,5 @@
 //Isabella Chen, Prisha Saraiya, Mr. Moon, period 7
-//Purpose of Class:
+//Purpose of Class: The tester class that creates objects and changes instance variables.
 package Unit5WritingClasses.PartnerLab;
 
 public class ShowTester {
