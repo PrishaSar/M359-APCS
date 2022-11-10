@@ -1,5 +1,5 @@
 //Isabella Chen, Prisha Saraiya, Mr. Moon, period 7
-//Purpose of Class: To create an Act and keep track of the people in it.
+//Purpose of Class: To create an act and keep track of the people in it.
 package Unit5WritingClasses.PartnerLab;
 
 public class Acts {

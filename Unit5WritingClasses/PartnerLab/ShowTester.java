@@ -3,12 +3,10 @@
 package Unit5WritingClasses.PartnerLab;
 
 public class ShowTester {
-
     public static void main(String[] args) {
         People none = new People();
 
         // creating first show
-
         // act 1
         People trainer = new People("Trainer", "Isabella", false);
         Acts catGymnastics = new Acts("Acrobatics", 15, 8, trainer, none, none);
@@ -48,6 +46,8 @@ public class ShowTester {
 
         // show
         Show magicMania = new Show(apparation, ghost, cards, true, true);
+
+
 
         //interact w/ static variable and method
         //Java documentation
@@ -109,3 +109,24 @@ public class ShowTester {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
