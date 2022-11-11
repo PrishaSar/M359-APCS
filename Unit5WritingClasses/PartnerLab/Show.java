@@ -12,22 +12,18 @@ public class Show {
     private boolean isEvening;
     private int timeRemaining;
 
-    /**
-     * Full constructor for a show
-     * @param act1 - An Act object that is part of the show and contributes to the show's runTime. It must be more than 10 minutes long.
-     * @param act2 - The second Act object that is part of the show and contributes to the show's runTime. It must be more than 10 minutes long.
-     * @param act3 - The third Act object that is part of the show and contributes to the show's runTime. It must be more than 10 minutes long.
-     * @param isWeekend - a boolean that is true if the show takes place on the weekend.
-     * @param isEvening - a boolean that is true if the show takes place in the evening.
-     */
-    public Show(Acts act1, Acts act2, Acts act3, boolean isWeekend, boolean isEvening) {
-        this.act1 = new Acts(act1.getType(), act1.getRunTime(), act1.getPopularity(), act1.getPerson1(), act1.getPerson2(), act1.getPerson3());
-        this.act2 = new Acts(act2.getType(), act2.getRunTime(), act2.getPopularity(), act2.getPerson1(), act2.getPerson2(), act2.getPerson3());
-        this.act3 = new Acts(act3.getType(), act3.getRunTime(), act3.getPopularity(), act3.getPerson1(), act3.getPerson2(), act3.getPerson3());
+    private String nameOfShow;
+
+    // constructor
+    public Show(Acts act1, Acts act2, Acts act3, boolean isWeekend, boolean isEvening, String nameOfShow) {
+        this.act1 = act1;
+        this.act2 = act2;
+        this.act3 = act3;
         this.runTime = setRunTime();
         this.timeRemaining = this.runTime;
         this.isWeekend = isWeekend;
         this.isEvening = isEvening;
+        this.nameOfShow = nameOfShow;
     }
 
     /**
@@ -52,22 +48,27 @@ public class Show {
      * Runs an act in the show and updates the counter that keeps track of how many minutes are left until
      * the whole show ends. When the act runs, it changes the act boolean variable hasBeenShown to true.
      * If the entire show is over, set all the act boolean variables to false again.
+     * The function makes sure to take away the introduction and ending times.
      *
      * @param act - the Act that has just finished.
      */
     public void runAct(Acts act){
+        if(act == this.act1){
+            timeRemaining -= 5;
+        }
         timeRemaining -= act.getRunTime();
         act.setHasBeenShown(true);
-        if(timeRemaining < 20){
+        if(act == this.act3){
             act1.setHasBeenShown(false);
             act2.setHasBeenShown(false);
             act3.setHasBeenShown(false);
+            timeRemaining = 0;
         }
     }
 
 
     /**
-     *This calculates the approximate revenue earned from a show (in hundreds), depending on the popularity
+     * This calculates the approximate revenue earned from a show (in hundreds), depending on the popularity
      * of each act in the show and the time of the week the show takes place.
      * The higher the popularity, the more revenue.
      * If the show is on a weekend or in the evening, the revenue increases.
@@ -132,5 +133,13 @@ public class Show {
 
     public int getTimeRemaining() {
         return timeRemaining;
+    }
+
+    public String getNameOfShow() {
+        return nameOfShow;
+    }
+
+    public void setNameOfShow(String nameOfShow) {
+        this.nameOfShow = nameOfShow;
     }
 }

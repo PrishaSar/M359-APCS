@@ -7,11 +7,14 @@ public class People {
     private String skill;
     private String name;
     private boolean backstage;
+
+    // constructors
     public People(String skill, String name, boolean backstage) {
         this.skill = skill;
         this.name = name;
         this.backstage = backstage;
     }
+
     public People() {
         this.skill = "N/A";
         this.name = "N/A";

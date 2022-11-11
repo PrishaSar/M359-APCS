@@ -23,15 +23,7 @@ public class Acts {
         return totalRunTime;
     }
 
-    /**
-     * Full constructor for an act
-     * @param type A string that describes the act type.
-     * @param runTime An int that describes how long the act runs for, in minutes.
-     * @param popularity An int that describes how popular the act is, on a scale of 1 to 10.
-     * @param person1 A People object for a person performing in the act. Might not perform.
-     * @param person2 A People object for a person performing in the act. Might not perform.
-     * @param person3 A People object for a person performing in the act. Might not perform.
-     */
+    // constructor
     public Acts(String type, int runTime, double popularity, People person1, People person2, People person3) {
         this.type = type;
         this.runTime = runTime;

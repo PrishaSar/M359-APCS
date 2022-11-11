@@ -11,11 +11,15 @@ public class ShowTester {
         People trainer = new People("Trainer", "Isabella", false);
         Acts catGymnastics = new Acts("Acrobatics", 15, 8, trainer, none, none);
 
+        System.out.println("The total run time of all the acts is " + Acts.getTotalRunTime() + " minutes");
+
         // act 2
         People mainLeadF = new People("Main Lead Female", "Stara", false);
         People props = new People("Handling Props and Music", "Joe", true);
         People secondLead = new People("Second Lead Male", "Jerry Moon", false);
         Acts musical = new Acts("Musical", 30, 7, mainLeadF, props, secondLead);
+
+        System.out.println("The total run time of all the acts is " + Acts.getTotalRunTime() + " minutes");
 
         // act 3
         People primaBallerina = new People("Lead Dancer", "Christina", false);
@@ -24,7 +28,9 @@ public class ShowTester {
         Acts danceMash = new Acts("Dance", 45, 5, primaBallerina, hipHoper, jazzDancer);
 
         // show
-        Show mixAndMatch = new Show(catGymnastics, musical, danceMash, true, false);
+        Show mixAndMatch = new Show(catGymnastics, musical, danceMash, true, false,"Mix and Match");
+
+        System.out.println("The total run time of all the acts is " + Acts.getTotalRunTime() + " minutes");
 
         // creating second show
 
@@ -45,12 +51,36 @@ public class ShowTester {
         Acts cards = new Acts ("Magic", 20, 8, cardMagician, none, none);
 
         // show
-        Show magicMania = new Show(apparation, ghost, cards, true, true);
+        Show magicMania = new Show(apparation, ghost, cards, true, true, "Magic Mania");
 
+        System.out.println("The total run time of all the acts is " + Acts.getTotalRunTime() + " minutes");
+        System.out.println();
 
+        //Get the number of people in musical:
+        System.out.println("The number of people in the musical: " + musical.getNumPeople());
 
-        //interact w/ static variable and method
-        //Java documentation
+        //But oh no! Joe embezzled money from the theater! Let's fire him.
+        fireAndHirePerson(musical, 2, none);
+        System.out.println("The number of people in the musical after Joe was fired: " + musical.getNumPeople());
+        System.out.println();
+
+        //It's opening night! Let's run the first show!
+        System.out.println("Time remaining in show: " + mixAndMatch.getTimeRemaining() + " minutes");
+        mixAndMatch.runAct(catGymnastics);
+        System.out.println("Time remaining in show: " + mixAndMatch.getTimeRemaining() + " minutes");
+        mixAndMatch.runAct(musical);
+        System.out.println("Time remaining in show: " + mixAndMatch.getTimeRemaining() + " minutes");
+        mixAndMatch.runAct(danceMash);
+        System.out.println("Time remaining in show: " + mixAndMatch.getTimeRemaining() + " minutes");
+
+        System.out.println();
+        
+        //Let's see how popular some of the acts are in both shows:
+        System.out.println("Mix and match: " + mixAndMatch.getAct1().getPopularity());
+        //Pretending that both shows ran, let's see which one got greater revenue!
+
+        System.out.println(compareShows(mixAndMatch, magicMania).getNameOfShow() + " gives the most revenue.");
+
     }
 
     /**This function takes two shows and estimates their revenue. The show that has a higher
