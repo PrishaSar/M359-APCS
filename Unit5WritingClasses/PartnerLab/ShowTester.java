@@ -56,15 +56,15 @@ public class ShowTester {
         System.out.println("The total run time of all the acts is " + Acts.getTotalRunTime() + " minutes");
         System.out.println();
 
-        //Get the number of people in musical:
+        // Get the number of people in musical:
         System.out.println("The number of people in the musical: " + musical.getNumPeople());
 
-        //But oh no! Joe embezzled money from the theater! Let's fire him.
+        // But oh no! Joe embezzled money from the theater! Let's fire him.
         fireAndHirePerson(musical, 2, none);
         System.out.println("The number of people in the musical after Joe was fired: " + musical.getNumPeople());
         System.out.println();
 
-        //It's opening night! Let's run the first show!
+        // It's opening night! Let's run the first show!
         System.out.println("Time remaining in show: " + mixAndMatch.getTimeRemaining() + " minutes");
         mixAndMatch.runAct(catGymnastics);
         System.out.println("Time remaining in show: " + mixAndMatch.getTimeRemaining() + " minutes");
@@ -75,15 +75,16 @@ public class ShowTester {
 
         System.out.println();
         
-        //Let's see how popular some of the acts are in both shows:
+        // Let's see how popular some of the acts are in both shows:
         System.out.println("Mix and match: " + mixAndMatch.getAct1().getPopularity());
-        //Pretending that both shows ran, let's see which one got greater revenue!
 
+        // Pretending that both shows ran, let's see which one got greater revenue!
         System.out.println(compareShows(mixAndMatch, magicMania).getNameOfShow() + " gives the most revenue.");
 
     }
 
-    /**This function takes two shows and estimates their revenue. The show that has a higher
+    /**
+     * This function takes two shows and estimates their revenue. The show that has a higher
      * revenue leads to the increase of all of its acts by 0.5. If both shows are equal, one show is randomly picked.
      *
      * @param a - the first show being simulated
@@ -91,8 +92,8 @@ public class ShowTester {
      * @return - the show that has a higher revenue
      */
     public static Show compareShows(Show a, Show b){
-        int aRev = a.calcRevenue();
-        int bRev = b.calcRevenue();
+        int aRev = Show.calcRevenue(a);
+        int bRev = Show.calcRevenue(b);
 
         if(aRev > bRev){
             a.getAct1().setPopularity(a.getAct1().getPopularity() + 0.5);

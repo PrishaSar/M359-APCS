@@ -4,7 +4,7 @@ package Unit5WritingClasses.PartnerLab;
 
 public class Acts {
     // instance variables
-    String type;
+    private String type;
     private int runTime;
     private double popularity;
     private boolean hasBeenShown;

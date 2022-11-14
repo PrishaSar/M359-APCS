@@ -74,13 +74,13 @@ public class Show {
      * If the show is on a weekend or in the evening, the revenue increases.
      * @return - returns the approximate revenue earned from a show (in hundreds)
      */
-    public int calcRevenue(){
+    public static int calcRevenue(Show show){
         int rev = 0;
-        rev += this.act1.getPopularity() + this.act2.getPopularity() + this.act3.getPopularity();
-        if (this.isEvening()){
+        rev += show.act1.getPopularity() + show.act2.getPopularity() + show.act3.getPopularity();
+        if (show.isEvening()){
             rev += 5;
         }
-        if(this.isWeekend()){
+        if(show.isWeekend()){
             rev += 6;
         }
         return rev;
