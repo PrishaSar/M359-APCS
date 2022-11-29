@@ -43,7 +43,7 @@
       <recent name="H:\M359_Saraiya_22-23\M359-APCS\Unit3_Boolean_If_Statements\ShoeCourseJUnitEx" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShowTester">
+  <component name="RunManager" selected="Application.StudentTester">
     <configuration name="MarvelMovieTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit5WritingClasses.HeroVillian.MarvelMovieTester" />
       <module name="M359-APCS" />
@@ -83,6 +83,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit6A_rrays.CourseEx.StudentTester" />
+      <module name="M359-APCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit6A_rrays.CourseEx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unit4TestRev" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unite4_loops.Unit4TestRev" />
       <module name="M359-APCS" />
@@ -96,28 +109,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PigLatinJUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="M359-APCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unite4_loops.PigLatinLab.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Unite4_loops.PigLatinLab" />
-      <option name="MAIN_CLASS_NAME" value="Unite4_loops.PigLatinLab.PigLatinJUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StudentTester" />
         <item itemvalue="Application.ShowTester" />
         <item itemvalue="Application.MarvelMovieTester" />
         <item itemvalue="Application.Unit4TestRev" />
         <item itemvalue="Application.PigLatinDriver" />
-        <item itemvalue="JUnit.PigLatinJUnitTest (1)" />
       </list>
     </recent_temporary>
   </component>

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="575e7d17-11c7-46b0-ab81-5b0976065645" name="Changes" comment="" />
-    <list id="ad4867e4-3c2f-4439-919d-f1f24b087d89" name="Changes by chen1590" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +43,7 @@
       <recent name="H:\M359_Saraiya_22-23\M359-APCS\Unit3_Boolean_If_Statements\ShoeCourseJUnitEx" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShowTester">
+  <component name="RunManager" selected="Application.StudentTester">
     <configuration name="MarvelMovieTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit5WritingClasses.HeroVillian.MarvelMovieTester" />
       <module name="M359-APCS" />
@@ -84,6 +83,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit6A_rrays.CourseEx.StudentTester" />
+      <module name="M359-APCS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit6A_rrays.CourseEx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unit4TestRev" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unite4_loops.Unit4TestRev" />
       <module name="M359-APCS" />
@@ -97,28 +109,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PigLatinJUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="M359-APCS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unite4_loops.PigLatinLab.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Unite4_loops.PigLatinLab" />
-      <option name="MAIN_CLASS_NAME" value="Unite4_loops.PigLatinLab.PigLatinJUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StudentTester" />
         <item itemvalue="Application.ShowTester" />
         <item itemvalue="Application.MarvelMovieTester" />
         <item itemvalue="Application.Unit4TestRev" />
         <item itemvalue="Application.PigLatinDriver" />
-        <item itemvalue="JUnit.PigLatinJUnitTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +173,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit5WritingClasses/PartnerLab/ShowTester.java</url>
+          <line>5</line>
+          <properties class="Unit5WritingClasses.PartnerLab.ShowTester" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
