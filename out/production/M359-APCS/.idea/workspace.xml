@@ -43,13 +43,13 @@
       <recent name="H:\M359_Saraiya_22-23\M359-APCS\Unit3_Boolean_If_Statements\ShoeCourseJUnitEx" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StudentTester">
-    <configuration name="MarvelMovieTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit5WritingClasses.HeroVillian.MarvelMovieTester" />
+  <component name="RunManager" selected="Application.FileReadingExample">
+    <configuration name="FileReadingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit6A_rrays.CourseEx.FileReadingExample" />
       <module name="M359-APCS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit5WritingClasses.HeroVillian.*" />
+          <option name="PATTERN" value="Unit6A_rrays.CourseEx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -57,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PigLatinDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unite4_loops.PigLatinLab.PigLatinDriver" />
+    <configuration name="MarvelMovieTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit5WritingClasses.HeroVillian.MarvelMovieTester" />
       <module name="M359-APCS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unite4_loops.PigLatinLab.*" />
+          <option name="PATTERN" value="Unit5WritingClasses.HeroVillian.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FileReadingExample" />
         <item itemvalue="Application.StudentTester" />
         <item itemvalue="Application.ShowTester" />
         <item itemvalue="Application.MarvelMovieTester" />
         <item itemvalue="Application.Unit4TestRev" />
-        <item itemvalue="Application.PigLatinDriver" />
       </list>
     </recent_temporary>
   </component>
