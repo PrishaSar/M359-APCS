@@ -5,30 +5,45 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 public class FileReadingExample {
     public static void main(String[] args) throws FileNotFoundException {
-        File myFile = new File("oneSchedule.txt");
+        File myFile = new File("studentScheduleData.txt");
         Scanner fileIn = new Scanner(myFile);
+        //find number of students in the file
+        int numOfStud = fileIn.nextInt(); //6
+        fileIn.nextLine(); //dummy read for new line after #
 
-        String stud = fileIn.nextLine();
-        Course[] sched = new Course[8];
+        //create an array of student objects to store in our class
+        Student[] studs = new Student[numOfStud];
 
-        for(int i = 0; i<8; i++){
-            String teacher = fileIn.nextLine();
-            String cl = fileIn.nextLine();
-            String grade = fileIn.nextLine();
-            int per = fileIn.nextInt();
-            if (fileIn.hasNextLine()) {
-                fileIn.nextLine();                //dummy read to clear new line after #
+        for(int i = 0; i < numOfStud; i++) {
+
+            String stud = fileIn.nextLine();
+            Course[] sched = new Course[8];
+
+            for (int s = 0; s < 8; s++) {
+                String teacher = fileIn.nextLine();
+                String cl = fileIn.nextLine();
+                String grade = fileIn.nextLine();
+                int per = fileIn.nextInt();
+                if (fileIn.hasNextLine()) {
+                    fileIn.nextLine();                //dummy read to clear new line after #
+                    }
+
+                Course myCourse = new Course(teacher, cl, grade, per);
+                sched[s] = myCourse;
             }
 
-            Course myCourse = new Course(teacher, cl, grade, per);
-            sched[i] = myCourse;
+            //now create student object
+
+            Student curStudent = new Student(stud, sched);
+            studs[i] = curStudent;
+
         }
 
-        for(Course c: sched){
-            System.out.println(c);
+        //now go and display all those students
+        for(Student a: studs){
+            System.out.println(a);
         }
 
-//        Student Molly = new Student(stud, sched);
 
     }
 }

@@ -39,11 +39,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\M359_Saraiya_22-23\M359-APCS" />
       <recent name="H:\M359_Saraiya_22-23\M359-APCS\Unit3_Boolean_If_Statements\ChevyJUnitLab" />
       <recent name="H:\M359_Saraiya_22-23\M359-APCS\Unit3_Boolean_If_Statements\ShoeCourseJUnitEx" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FileReadingExample">
+  <component name="RunManager" selected="Application.TriviaDriver">
     <configuration name="FileReadingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit6A_rrays.CourseEx.FileReadingExample" />
       <module name="M359-APCS" />
@@ -96,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unit4TestRev" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unite4_loops.Unit4TestRev" />
+    <configuration name="TriviaDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit6A_rrays.TriviaLab.TriviaDriver" />
       <module name="M359-APCS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unite4_loops.*" />
+          <option name="PATTERN" value="Unit6A_rrays.TriviaLab.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TriviaDriver" />
         <item itemvalue="Application.FileReadingExample" />
         <item itemvalue="Application.StudentTester" />
         <item itemvalue="Application.ShowTester" />
         <item itemvalue="Application.MarvelMovieTester" />
-        <item itemvalue="Application.Unit4TestRev" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +187,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="9" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="14" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
