@@ -63,4 +63,12 @@ public class Question {
     public void setPoints(int points) {
         this.points = points;
     }
+
+    public boolean isHasBeenUsed() {
+        return hasBeenUsed;
+    }
+
+    public void setHasBeenUsed(boolean hasBeenUsed) {
+        this.hasBeenUsed = hasBeenUsed;
+    }
 }
