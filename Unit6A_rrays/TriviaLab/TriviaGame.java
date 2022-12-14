@@ -12,6 +12,8 @@ public class TriviaGame {
 
     private String triviaName;
 
+    private int betting;
+
     public TriviaGame(String fileName, String triviaName) throws FileNotFoundException {
         this.fileName = fileName;
         this.readTextFile(fileName);
@@ -20,8 +22,14 @@ public class TriviaGame {
         this.points = 0;
         this.streak = 0;
         this.qsPlayed = 0;
+        this.betting = 0;
     }
 
+    /**
+     * This function reads a text file and creates the question array.
+     * @param fileName - the name & location of the file that contains the questions
+     * @throws FileNotFoundException
+     */
     private void readTextFile(String fileName) throws FileNotFoundException {
         //get file
         File trivia = new File(fileName);
@@ -46,6 +54,10 @@ public class TriviaGame {
         }
     }
 
+    /**
+     * This function picks a random question from the array of questions for a round by generating a random index.
+     * @return - the question picked
+     */
     public Question getRandQues(){
         int index = (int)(Math.random() * qs.length);
         while(qs[index].isHasBeenUsed()){
@@ -54,6 +66,11 @@ public class TriviaGame {
         return qs[index];
     }
 
+    /**
+     * this function returns stats for the end of the game (total points, correct answers, percentage correct),
+     * including telling the reader how good they are at the questions.
+     * @return - a String with the stats
+     */
     public String getStats(){
         String stats = "Total points: " + points + "\nCorrect Answers: " + correct;
         double percentage = (double)correct/qsPlayed * 100;
@@ -76,6 +93,34 @@ public class TriviaGame {
         return stats;
     }
 
+    /**
+     * This function resets all the trivia stats to 0,
+     * and turns the questions' hasBeenUsed boolean instance variables to false.
+     */
+    public void reStart(){
+        this.correct = 0;
+        this.points = 0;
+        this.streak = 0;
+        this.qsPlayed = 0;
+        this.betting = 0;
+        for(Question q: qs){
+            q.setHasBeenUsed(false);
+        }
+    }
+
+    public double pointGain(Question q, boolean won){
+        int wonPoints = 0;
+        if(won){
+            if(points <= 0){
+                return 2 - points;
+            }
+            return q.getPoints() + betting * 2;
+
+        }
+        else{
+            return (double)q.getPoints()/2 + betting * 2;
+        }
+    }
     public Question[] getQs() {
         return qs;
     }
@@ -131,5 +176,21 @@ public class TriviaGame {
     public void setFileName(String fileName) throws FileNotFoundException {
         this.fileName = fileName;
         this.readTextFile(fileName);
+    }
+
+    public int isBetting() {
+        return betting;
+    }
+
+    public void setBetting(int betting) {
+        if (betting > points){
+            this.betting = (int)points;
+        }
+        else if(betting < 0){
+            this.betting = 0;
+        }
+        else{
+            this.betting = betting;
+        }
     }
 }
