@@ -139,6 +139,11 @@
           <line>4</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit6A_rrays/TriviaLab/Question.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit3_Boolean_If_Statements/CompoundBooleanEx.java</url>
           <line>3</line>

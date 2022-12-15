@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class TriviaDriver {
     public static void main(String[] args) throws FileNotFoundException {
         TriviaGame mystery = new TriviaGame("labQuestions.txt", "Mystery");
+
         Scanner gamePlay = new Scanner(System.in);
         System.out.println("Welcome to the " + mystery.getTriviaName() + " Trivia Game! What's your name?");
         String playerName = gamePlay.nextLine();
@@ -53,7 +54,7 @@ public class TriviaDriver {
     public static void oneRound(TriviaGame trivia, Scanner userinput){
         System.out.println("Do you want to wager your points? If you win, you get double the points!\n " +
                 "You can only wager the amount of points you have. If this is your first round, type 0.\n" +
-                "(If you are at or below 0, the total game points become 2)\n How many points? (if none, type 0)");
+                "(If you are at or below 0, the total game points become 2)\n How many points will you wager? (if none, type 0)");
         trivia.setBetting(userinput.nextInt());
         userinput.nextLine();
         Question q = trivia.getRandQues();

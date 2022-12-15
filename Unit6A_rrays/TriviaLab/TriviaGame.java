@@ -95,7 +95,7 @@ public class TriviaGame {
 
     /**
      * This function resets all the trivia stats to 0,
-     * and turns the questions' hasBeenUsed boolean instance variables to false.
+     * and turns the questions' hasBeenUsed boolean instance variables to false to restart the game.
      */
     public void reStart(){
         this.correct = 0;
@@ -108,17 +108,27 @@ public class TriviaGame {
         }
     }
 
+    /**
+     * This function calculates the points won or lost in a game.
+     * If a person won, the user gets the points assigned to that question. If they lost, they lost half of that.
+     * If the person decided to bet their money, the person either gets
+     * an added bonus of double the amount they bet, or loses 1.5 of the amount they bet.
+     * @param q - the Question that the user just answered
+     * @param won - a boolean that indicates whether the person lost or won points.
+     * @return an int that indicates the number of points won or lost
+     */
+
     public double pointGain(Question q, boolean won){
         int wonPoints = 0;
         if(won){
-            if(points <= 0){
+            if(points <= 0 && betting != 0){
                 return 2 - points;
             }
             return q.getPoints() + betting * 2;
 
         }
         else{
-            return (double)q.getPoints()/2 + betting * 2;
+            return (double)q.getPoints()/2 + betting * 1.5;
         }
     }
     public Question[] getQs() {
@@ -185,9 +195,11 @@ public class TriviaGame {
     public void setBetting(int betting) {
         if (betting > points){
             this.betting = (int)points;
+            System.out.println("You don't have enough bets to do that. You bet all your points.\n");
         }
         else if(betting < 0){
             this.betting = 0;
+            System.out.println("You can't bet negative points. You will bet nothing.\n");
         }
         else{
             this.betting = betting;
