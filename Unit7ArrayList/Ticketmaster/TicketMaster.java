@@ -35,8 +35,15 @@ public class TicketMaster {
         }
     }
 
-    public static String menuOption(){
-        String out = "\t\t\t\t\t**** Welcome to the Ticket Master Kiosk ****";
+    public String menuOption(){
+        String out = "\n1. Search by city\n2. Sort by Performer (A-Z)\n3. Sort by Performer (Z-A)";
+        out += "\n4. Sort by Price (low - high)\n5. Sort by Price (high - low)\n" +
+                "6. Quit\n\nEnter a value between 1 and 6";
         return out;
     }
+
+    public ArrayList<Show> sortByCity(String city){
+        return shows;
+    }
+
 }

@@ -166,9 +166,10 @@ public class Notes_7_4{
      * @param list
      */
     public static void shiftLeft(ArrayList<String> list) {
-        String first = list.get(0);
-        list.remove(0);
-        list.add(first);
+        list.add(list.remove(0));
+//        String first = list.get(0);
+//        list.remove(0);
+//        list.add(first);
     }
 
 
