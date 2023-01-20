@@ -15,6 +15,12 @@ public class Show {
         this.qty = qty;
     }
 
+//    public boolean equals(Show other){
+//        if(this.date.equals(other.date)){
+//
+//        }
+//    }
+
     public String toString(){
         String out = date + "\t$" + price + "\t\t" + qty + "\t\t";
         int len = person.length();

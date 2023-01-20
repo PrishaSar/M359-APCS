@@ -37,7 +37,12 @@ public class TicketMasterDriver {
                     System.out.println("You entered option " + option + ".\n");
                     if(option == CITY){
                         System.out.println("Which city do you want to search for?");
-                        
+                        try {
+                            String loc = user.nextLine();
+                        }
+                        catch(Exception e){
+
+                        }
                     }
                     else if(option == PERFORM_A){
 
