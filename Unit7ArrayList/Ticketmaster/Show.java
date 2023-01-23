@@ -11,16 +11,9 @@ public class Show {
         this.date = date;
         this.price = price;
         this.person = person;
-        this.city = city;
+        this.city = city.substring(1);
         this.qty = qty;
     }
-
-//    public boolean equals(Show other){
-//        if(this.date.equals(other.date)){
-//
-//        }
-//    }
-
     public String toString(){
         String out = date + "\t$" + price + "\t\t" + qty + "\t\t";
         int len = person.length();

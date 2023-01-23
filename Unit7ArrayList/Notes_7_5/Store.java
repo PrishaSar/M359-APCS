@@ -2,11 +2,13 @@ package Unit7ArrayList.Notes_7_5;
 
 // import ArrayList class
 
+import java.util.ArrayList;
+
 public class Store {
     // declare an instance variable of an ArrayList of type Item called myItems
-
+    ArrayList<Item> myItems;
     public Store() {
-        // instantiate the ArrayList myItems
+        myItems = new ArrayList<Item>();
     }
 
     /**
@@ -25,17 +27,31 @@ public class Store {
      */
 
     public boolean updateStock(Item newItem) {
-        return true;
-    }
 
+        boolean isFound = false;
+        for (int i = 0; i < myItems.size(); i++) {
+            Item cur = myItems.get(i);
+            if(cur.equals(newItem)){
+                cur.setQuantity(cur.getQuantity() + newItem.getQuantity());
+                isFound = true;
+            }
+        }
+        if(isFound == false){
+            myItems.add(newItem);
+        }
+        return !isFound;
+    }
     /**
      * This method returns a String representation of every Item in the ArrayList
      * The toString of the Item class should be called here as a helper method.
      */
 
     public String toString() {
-
-        return " ";
+        String allItems = "Items in Stock (name, price, quantity):";
+        for(Item i: myItems){
+            allItems += i;
+        }
+        return allItems;
     }
 
 }

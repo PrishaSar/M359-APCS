@@ -36,14 +36,20 @@ public class TicketMaster {
     }
 
     public String menuOption(){
-        String out = "\n1. Search by city\n2. Sort by Performer (A-Z)\n3. Sort by Performer (Z-A)";
+        String out = "\n1. Search by City\n2. Sort by Performer (A-Z)\n3. Sort by Performer (Z-A)";
         out += "\n4. Sort by Price (low - high)\n5. Sort by Price (high - low)\n" +
                 "6. Quit\n\nEnter a value between 1 and 6";
         return out;
     }
 
     public ArrayList<Show> sortByCity(String city){
-        return shows;
+        ArrayList<Show> showsInCity = new ArrayList<Show>();
+        for(Show s: shows){
+            if(s.getCity().equalsIgnoreCase(city)){
+                showsInCity.add(s);
+            }
+        }
+        return showsInCity;
     }
 
 }

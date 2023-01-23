@@ -1,6 +1,8 @@
 package Unit7ArrayList.Ticketmaster;
 
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class TicketMasterDriver {
@@ -14,18 +16,19 @@ public class TicketMasterDriver {
     public static void main(String[] args) throws FileNotFoundException {
         TicketMaster tM = new TicketMaster();
         tM.readFile("showData.txt");
-//        System.out.println(tM);
         Scanner user = new Scanner(System.in);
 
         String out = "\t\t\t\t\t**** Welcome to the Ticket Master Kiosk ****\n";
         out += "You may search our shows by city as well as by performer and ticket price.\n";
         out += "\t\tSimply select the correct option corresponding with your choice.";
         System.out.println(out);
+
         System.out.println(tM.menuOption());
         boolean repeat = true;
         while(repeat){
             try{
                 int option = user.nextInt();
+                user.nextLine();
                 if(option < 1 || option > 6){
                     System.out.println("Please enter a number between 1 and 6.");
                 }
@@ -37,11 +40,17 @@ public class TicketMasterDriver {
                     System.out.println("You entered option " + option + ".\n");
                     if(option == CITY){
                         System.out.println("Which city do you want to search for?");
-                        try {
-                            String loc = user.nextLine();
+                        String loc = user.nextLine();
+                        ArrayList<Show> showsAv = tM.sortByCity(loc);
+                        if(showsAv.size() == 0){
+                            System.out.println("\nThere are no shows available in " + loc.toUpperCase());
                         }
-                        catch(Exception e){
-
+                        else{
+                            System.out.println("\nHere are all the shows in " + loc.toUpperCase() + ":\n");
+                            System.out.println("Date\t\tPrice\t\tQty\t\tPerformer\t\t\tCity\n------------------------------------------------------------");
+                            for(Show s: showsAv){
+                                System.out.print(s);
+                            }
                         }
                     }
                     else if(option == PERFORM_A){

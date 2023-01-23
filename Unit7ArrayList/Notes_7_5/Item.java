@@ -28,7 +28,7 @@ public class Item {
      * Where 10 represents the quantity
      */
     public String toString() {
-        String out = "Item: " + name + ", $" + cost + ", " + quantity;
+        String out = name + ", $" + cost + ", " + quantity;
         return out + "\n";
     }
 
