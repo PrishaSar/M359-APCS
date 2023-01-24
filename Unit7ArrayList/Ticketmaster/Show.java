@@ -14,6 +14,13 @@ public class Show {
         this.city = city.substring(1);
         this.qty = qty;
     }
+
+    /**
+     * toString() formats a string containing all the information for the tickets of a particular show,
+     * including the date, price, performer, city, and number of tickets available in a way
+     * that it aligns with the header and other show strings.
+     * @return - a properly formatted string
+     */
     public String toString(){
         String out = date + "\t$" + price + "\t\t" + qty + "\t\t";
         int len = person.length();

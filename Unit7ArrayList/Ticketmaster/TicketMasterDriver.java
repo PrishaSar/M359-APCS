@@ -47,10 +47,7 @@ public class TicketMasterDriver {
                         }
                         else{
                             System.out.println("\nHere are all the shows in " + loc.toUpperCase() + ":\n");
-                            System.out.println("Date\t\tPrice\t\tQty\t\tPerformer\t\t\tCity\n------------------------------------------------------------");
-                            for(Show s: showsAv){
-                                System.out.print(s);
-                            }
+                            System.out.println(tM.toString(showsAv));
                         }
                     }
                     else if(option == PERFORM_A){
