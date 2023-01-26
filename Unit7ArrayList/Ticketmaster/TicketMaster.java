@@ -86,4 +86,30 @@ public class TicketMaster {
         return showsInCity;
     }
 
+    /**
+     * This function sorts the shows in alphabetical/reverse-alphabetical order using the compareTo() method based on the performer's name and
+     * This function uses selection sort.
+     * @param forwards - a boolean that tells the function whether the function should sort the list:
+     *                 A-Z( forward = true) or Z-A(forward = false)
+     */
+
+    public void sortByPerformer(boolean forwards){
+        for(int i = 0; i < shows.size() -1; i++){
+            //set min index to current iteration
+            int minIndex = i;
+            //look for smallest # in list after i;
+            for(int j = i + 1; j < shows.size(); j++){
+                int compare = shows.get(j).getPerson().compareTo(shows.get(minIndex).getPerson());
+                if((compare < 0 && forwards) || (compare > 0 && !forwards)){
+                    minIndex = j;
+                }
+            }
+            //swap index @ i & minIndex
+            Show temp = shows.get(i);
+            shows.set(i, shows.get(minIndex));
+            shows.set(minIndex, temp);
+        }
+    }
+    
+
 }

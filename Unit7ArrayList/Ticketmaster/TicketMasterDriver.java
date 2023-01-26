@@ -51,10 +51,12 @@ public class TicketMasterDriver {
                         }
                     }
                     else if(option == PERFORM_A){
-
+                        tM.sortByPerformer(true);
+                        System.out.println(tM);
                     }
                     else if(option == PERFORM_Z){
-
+                        tM.sortByPerformer(false);
+                        System.out.println(tM);
                     }
                     else if(option == PRICE_LOW){
 
