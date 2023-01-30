@@ -59,10 +59,12 @@ public class TicketMasterDriver {
                         System.out.println(tM);
                     }
                     else if(option == PRICE_LOW){
-
+                        tM.sortByPriceIncreasing();
+                        System.out.println(tM);
                     }
                     else if(option == PRICE_HIGH){
-
+                        tM.sortByPriceDecreasing();
+                        System.out.println(tM);
                     }
                     System.out.println(tM.menuOption());
                 }

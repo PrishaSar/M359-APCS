@@ -87,7 +87,8 @@ public class TicketMaster {
     }
 
     /**
-     * This function sorts the shows in alphabetical/reverse-alphabetical order using the compareTo() method based on the performer's name and
+     * This function sorts the shows in alphabetical/reverse-alphabetical order using the compareTo()
+     * method based on the performer's name and
      * This function uses selection sort.
      * @param forwards - a boolean that tells the function whether the function should sort the list:
      *                 A-Z( forward = true) or Z-A(forward = false)
@@ -108,6 +109,40 @@ public class TicketMaster {
             Show temp = shows.get(i);
             shows.set(i, shows.get(minIndex));
             shows.set(minIndex, temp);
+        }
+    }
+
+    /**
+     * This function sorts the shows from lowest price to highest.
+     * This function uses insertion sort.
+     */
+
+    public void sortByPriceIncreasing(){
+        for(int i = 1; i < shows.size(); i++){
+            Show valueToInsert = shows.get(i);
+            int cur = i;
+            while(cur > 0 && shows.get(cur-1).getPrice() > valueToInsert.getPrice()){
+                shows.set(cur, shows.get(cur-1));
+                cur --;
+            }
+            shows.set(cur, valueToInsert);
+        }
+    }
+
+    /**
+     * This function sorts the shows from highest price to the lowest.
+     * This function uses insertion sort.
+     */
+
+    public void sortByPriceDecreasing(){
+        for(int i = 1; i < shows.size(); i++){
+            Show valueToInsert = shows.get(i);
+            int cur = i;
+            while(cur > 0 && shows.get(cur-1).getPrice() < valueToInsert.getPrice()){
+                shows.set(cur, shows.get(cur-1));
+                cur --;
+            }
+            shows.set(cur, valueToInsert);
         }
     }
     
