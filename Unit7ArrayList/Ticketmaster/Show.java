@@ -11,7 +11,7 @@ public class Show {
         this.date = date;
         this.price = price;
         this.person = person;
-        this.city = city.substring(1);
+        this.city = city;
         this.qty = qty;
     }
 

@@ -6,9 +6,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TicketMaster {
-    private ArrayList<Show> shows = new ArrayList<Show>();
+    private ArrayList<Show> shows;
 
-    public TicketMaster() {
+    public TicketMaster(){
+        shows = new ArrayList<Show>();
     }
 
     /**
@@ -39,7 +40,7 @@ public class TicketMaster {
 
     /**
      * readFile() reads a file with information with shows and creates show objects for each show.
-     * It then adds these shows to the ticketMaster object.
+     * It then adds these shows to the ticketMaster object. It then closes the Scanner made.
      * @param fn - a string that is the name of the file that needs to be read
      * @throws FileNotFoundException
      */
@@ -53,10 +54,11 @@ public class TicketMaster {
             String temp = fileReader.nextLine();
             int ind = temp.indexOf(",");
             String name = temp.substring(0, ind);
-            String city = temp.substring(ind + 1);
+            String city = temp.substring(ind + 2);
             Show newShow = new Show(date, price, qty, name, city);
             shows.add(newShow);
         }
+        fileReader.close();
     }
 
     /**
