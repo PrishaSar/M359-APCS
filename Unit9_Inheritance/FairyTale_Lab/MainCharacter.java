@@ -16,8 +16,13 @@ public class MainCharacter extends Character{
         this.progress = 0;
     }
 
+    public void surrender(MainCharacter m){
+        m.setProgress(1);
+        System.out.println(m.getName() + " has won!");
+    }
+
     public int getSkillLevel(){
-        return getSkillLevel();
+        return skillLevel;
     }
 
     public void setSkillLevel(int skillLevel) {
@@ -30,5 +35,8 @@ public class MainCharacter extends Character{
 
     public void setProgress(double progress) {
         this.progress = progress;
+        if(progress >= 1){
+            System.out.println(getName() + " has won!");
+        }
     }
 }

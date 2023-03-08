@@ -8,6 +8,23 @@ public class PersonInPower extends Character{
         this.title = title;
     }
 
+    /**
+     *
+     * @param a
+     * @param p
+     */
+    @Override
+    public void uncoverAntagonist(Antagonist a, Protagonist p){
+        if(Math.random() < 0.46 && a.getSkillLevel() < 10){
+            a.setUndercover(false);
+            p.setAwareOfVillain(true);
+        }
+    }
+
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString(){
         return getName() + "is a " + title + " who can " + getSkill();

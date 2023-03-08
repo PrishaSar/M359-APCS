@@ -13,6 +13,19 @@ public class Protagonist extends MainCharacter{
         this.awareOfVillain = awareOfVillain;
     }
 
+    /**
+     *
+     * @param a
+     */
+    public void attack(Antagonist a){
+        a.setSkillLevel(a.getSkillLevel() - 3);
+        a.setProgress(a.getProgress() - 0.08);
+    }
+
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString(){
         String output = getName() + " is the protagonist. They are ";

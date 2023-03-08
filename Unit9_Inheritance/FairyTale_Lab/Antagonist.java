@@ -13,6 +13,19 @@ public class Antagonist extends MainCharacter{
         this.isUndercover = isUndercover;
     }
 
+    /**
+     *
+     * @param p
+     */
+    public void attack(Protagonist p){
+        p.setSkillLevel(p.getSkillLevel() - 3);
+        p.setProgress(p.getProgress() - 0.08);
+    }
+
+    /**
+     *
+     * @return
+     */
     public String toString(){
         String output =  getName() + " is the villain. They are ";
         if(!isUndercover){

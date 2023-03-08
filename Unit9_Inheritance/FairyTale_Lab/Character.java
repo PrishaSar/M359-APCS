@@ -16,16 +16,30 @@ public class Character {
         skill = "none";
     }
 
+    /**
+     *
+     * @param m
+     */
     public void attack(MainCharacter m){
-        m.getSkillLevel() -= 1;
-
+        m.setProgress(m.getProgress() - 0.01);
     }
-    public void uncoverAntagonist(Antagonist a){
-        if(Math.random() < 0.09){
-            a.setUndercover(true);
+
+    /**
+     *
+     * @param a
+     * @param p
+     */
+    public void uncoverAntagonist(Antagonist a, Protagonist p){
+        if(Math.random() < 0.09 && a.getSkillLevel() < 5){
+            a.setUndercover(false);
+            p.setAwareOfVillain(true);
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public String toString(){
         return "This character's name is " + name + " and they can " + skill + ".";
     }
