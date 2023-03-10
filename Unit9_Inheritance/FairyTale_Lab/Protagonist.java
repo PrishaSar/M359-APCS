@@ -14,17 +14,10 @@ public class Protagonist extends MainCharacter{
     }
 
     /**
+     * This function returns information about the protagonist
      *
-     * @param a
-     */
-    public void attack(Antagonist a){
-        a.setSkillLevel(a.getSkillLevel() - 3);
-        a.setProgress(a.getProgress() - 0.08);
-    }
-
-    /**
-     *
-     * @return
+     * @return a String containing the protagonist's skill level, progress,
+     * and if they are aware of the villain
      */
     @Override
     public String toString(){

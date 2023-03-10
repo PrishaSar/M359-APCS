@@ -9,8 +9,7 @@ public class Animal extends Character{
     }
 
     /**
-     *
-     *
+     * The function attack() helps a MainCharacter and increases their progress
      */
     public void attack(){
        onSide.setProgress(onSide.getProgress() + 0.05);
@@ -18,8 +17,10 @@ public class Animal extends Character{
 
 
     /**
+     * This function returns information about the Animal
      *
-     * @return
+     * @return a String containing the animal's name, skill,
+     * and which MainCharacter they support
      */
     @Override
     public String toString(){

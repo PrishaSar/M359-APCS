@@ -14,18 +14,12 @@ public class Antagonist extends MainCharacter{
     }
 
     /**
+     * This function returns information about the Antagonist.
      *
-     * @param p
+     * @return - a String containing the villain's skill level, progress,
+     * and if they are undercover or not.
      */
-    public void attack(Protagonist p){
-        p.setSkillLevel(p.getSkillLevel() - 3);
-        p.setProgress(p.getProgress() - 0.08);
-    }
-
-    /**
-     *
-     * @return
-     */
+    @Override
     public String toString(){
         String output =  getName() + " is the villain. They are ";
         if(!isUndercover){
