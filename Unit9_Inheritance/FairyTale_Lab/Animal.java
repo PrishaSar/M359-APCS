@@ -12,7 +12,7 @@ public class Animal extends Character{
      * The function attack() helps a MainCharacter and increases their progress
      */
     public void attack(){
-       onSide.setProgress(onSide.getProgress() + 0.05);
+       onSide.setProgress(onSide.getProgress() + 0.09);
     }
 
 
@@ -24,7 +24,7 @@ public class Animal extends Character{
      */
     @Override
     public String toString(){
-        return getName() + " is an Animal who can " + getSkill() + " and is on the side of " + onSide + ".";
+        return getName() + " is an animal who can " + getSkill() + " and is on the side of " + onSide.getName() + ".";
     }
 
     public MainCharacter getOnSide() {

@@ -25,9 +25,6 @@ public class Character {
         if(Math.random() < 0.5){
             m.setProgress(m.getProgress() - 0.01);
         }
-        else{
-            System.out.println("Attack failed.");
-        }
     }
 
     /**
@@ -42,6 +39,7 @@ public class Character {
         if(Math.random() < 0.09 && a.getSkillLevel() <= 5){
             a.setUndercover(false);
             p.setAwareOfVillain(true);
+            System.out.println("The villain has been uncovered!");
         }
     }
 

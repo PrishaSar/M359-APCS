@@ -26,7 +26,7 @@ public class Protagonist extends MainCharacter{
             output += " not ";
         }
         output += " aware of the villain.\n";
-        output += " They can " + getSkill() + " and are at skill level " + getSkillLevel() + ".\n";
+        output += "They can " + getSkill() + " and are at skill level " + getSkillLevel() + ".\n";
         output += getProgress()*100 + "% of the way to their goal.";
         return output;
     }

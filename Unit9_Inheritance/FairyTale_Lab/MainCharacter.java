@@ -51,6 +51,9 @@ public class MainCharacter extends Character{
      */
     public void makeProgress(){
         double moreProgress = skillLevel*Math.random() + 0.05;
+        if(skillLevel < 0){
+            moreProgress = 0.05;
+        }
         progress += moreProgress;
         System.out.println(getName() + " is now " + (progress*100) + "% of the way to their goal!");
     }

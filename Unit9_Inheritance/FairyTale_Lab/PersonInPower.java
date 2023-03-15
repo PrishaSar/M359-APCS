@@ -32,10 +32,10 @@ public class PersonInPower extends Character{
      */
     public void attack(MainCharacter m){
         if(Math.random() < 0.5){
-            m.setProgress(m.getProgress() - 0.05);
+            m.setProgress(m.getProgress() + 0.05);
         }
         else {
-            int newSkillLev = (int) (Math.random() * 5) - m.getSkillLevel() * 2;
+            int newSkillLev = (int) (Math.random() * 5) + m.getSkillLevel() * 2;
             m.setSkillLevel(newSkillLev);
         }
     }
@@ -47,7 +47,7 @@ public class PersonInPower extends Character{
      */
     @Override
     public String toString(){
-        return getName() + "is a " + title + " who can " + getSkill();
+        return getName() + " is a " + title + " who can " + getSkill() + ".";
     }
 
     public String getTitle() {
