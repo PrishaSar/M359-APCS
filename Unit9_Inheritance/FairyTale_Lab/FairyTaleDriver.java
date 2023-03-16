@@ -25,7 +25,7 @@ public class FairyTaleDriver {
         }
 
         System.out.println();
-
+        
         allAttack(characters, (Protagonist) blackWidow, (Antagonist) snowWhite);
         System.out.println(blackWidow);
         System.out.println();
@@ -39,12 +39,17 @@ public class FairyTaleDriver {
 
         ((Animal)dwarf).attack();
 
+
         queenOfHearts.uncoverAntagonist((Antagonist) snowWhite, (Protagonist) blackWidow);
 
         System.out.println();
 
-        System.out.println(blackWidow + "\n\n" + snowWhite);
-
+        if(((Protagonist) blackWidow).getProgress() > ((Antagonist) snowWhite).getProgress()){
+            ((Antagonist)snowWhite).surrender((MainCharacter) blackWidow);
+        }
+        else{
+            ((Protagonist) blackWidow).surrender((MainCharacter)snowWhite);
+        }
     }
 
     /**

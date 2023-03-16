@@ -36,7 +36,7 @@ public class Character {
      * @param p - the protagonist being (possibly) made aware of the villain.
      */
     public void uncoverAntagonist(Antagonist a, Protagonist p){
-        if(Math.random() < 0.09 && a.getSkillLevel() <= 5){
+        if(Math.random() < 0.5 && a.getSkillLevel() <= 5){
             a.setUndercover(false);
             p.setAwareOfVillain(true);
             System.out.println("The villain has been uncovered!");

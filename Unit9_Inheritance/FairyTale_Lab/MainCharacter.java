@@ -41,8 +41,9 @@ public class MainCharacter extends Character{
      * @param m - the MainCharacter being affected
      */
     public void surrender(MainCharacter m){
+        System.out.println(this.getName() + " has surrendered, being " + progress*100 + "% of the way" +
+                " to their goal.\n" + m.getName() + " is "+ m.getProgress()*100 + "% of the way to her goal.");
         m.setProgress(1);
-        System.out.println(m.getName() + " has won!");
     }
 
     /**
@@ -50,7 +51,7 @@ public class MainCharacter extends Character{
      * based on their SkillLevel
      */
     public void makeProgress(){
-        double moreProgress = skillLevel*Math.random() + 0.05;
+        double moreProgress = skillLevel*Math.random() + 0.25;
         if(skillLevel < 0){
             moreProgress = 0.05;
         }

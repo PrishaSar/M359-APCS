@@ -17,7 +17,7 @@ public class PersonInPower extends Character{
      */
     @Override
     public void uncoverAntagonist(Antagonist a, Protagonist p){
-        if(Math.random() < 0.46 && a.getSkillLevel() < 10){
+        if(Math.random() < 0.78 && a.getSkillLevel() < 10){
             a.setUndercover(false);
             p.setAwareOfVillain(true);
         }
@@ -32,7 +32,7 @@ public class PersonInPower extends Character{
      */
     public void attack(MainCharacter m){
         if(Math.random() < 0.5){
-            m.setProgress(m.getProgress() + 0.05);
+            m.setProgress(m.getProgress() + 0.15);
         }
         else {
             int newSkillLev = (int) (Math.random() * 5) + m.getSkillLevel() * 2;
